@@ -1,0 +1,18 @@
+{
+  "name": "magnat-sport-bot",
+  "version": "1.0.0",
+  "description": "Magnat Sport do'koni sotuv agenti Telegram boti",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "keywords": [
+    "telegram",
+    "bot",
+    "gemini",
+    "ai",
+    "sales-agent"
+  ],
+  "author": "Ali",
+  "license": "ISC"
+}
