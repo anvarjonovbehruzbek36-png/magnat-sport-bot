@@ -247,3 +247,13 @@ async function pollUpdates() {
 console.log("Magnat Sport Telegram boti ishga tushmoqda...");
 console.log("Tizim: Node.js (Agy-Node)");
 pollUpdates();
+
+// 7. Render/PaaS uchun port eshituvchi sodda server (Health Check uchun)
+const http = require('http');
+const PORT = process.env.PORT || 3000;
+http.createServer((req, res) => {
+  res.writeHead(200, { 'Content-Type': 'text/plain' });
+  res.end('Magnat Sport Telegram Bot is running!\n');
+}).listen(PORT, () => {
+  console.log(`Web server running on port ${PORT}`);
+});
